@@ -24,7 +24,7 @@ int main() {
     int b = 0;  // Entero que guarda el resultado de la suma
     //Que lo hacen paralelamente todos los hilos
     //En este caso i y a son privadas para cada hilo
-    #pragma omp parallel for private(i) private(a)
+    #pragma omp parallel for private(i) firstprivate(a)
     for (i = 0; i < N; i++) {
         b = a + i;   // Suma dentro del hilo
     }
