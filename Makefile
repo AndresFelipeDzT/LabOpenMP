@@ -36,7 +36,7 @@ Lab04: Lab04.c
 	$(CC) $(CFLAGS) -o Lab04 Lab04.c
 
 Lab05: Lab05.c
-	$(CC) $(CFLAGS) -o Lab05 Lab05.c
+	$(CC) $(CFLAGS) -o Lab05 Lab05.c -lm
 
 # Limpieza
 clean:
